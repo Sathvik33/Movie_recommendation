@@ -8,7 +8,7 @@ from sklearn.impute import SimpleImputer
 from sklearn.decomposition import PCA
 import os
 
-csv_path = os.path.join(os.path.dirname(__file__), "data", r"C:\C_py\Python\Un\data\imdb_top_1000.csv")
+csv_path = os.path.join(os.path.dirname(__file__), "data/imdb_top_1000.csv")
 df = pd.read_csv(csv_path)
 
 title_df = df[["Series_Title"]].copy()
